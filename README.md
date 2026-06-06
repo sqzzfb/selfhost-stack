@@ -1,1 +1,1 @@
-# selfhost-stack
+Halo + Siyuan + Caddy + RustDesk
