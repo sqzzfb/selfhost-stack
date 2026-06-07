@@ -12,6 +12,15 @@ curl -fsSL https://get.docker.com | sh
 ## confirm the installation of docker & docker compose
 docker --version && docker compose version
 
+## go to home directory
+cd ~
+
+## create docker-compose.yml & Caddyfile
+nano docker-compose.yml
+
+## create Caddyfile
+nano caddy/Caddyfile
+
 ## start containers
 docker compose up -d
 
