@@ -43,4 +43,5 @@ docker compose ps
 docker logs <container_name> --tail=30
 
 ## check rustdesk key
-docker logs hbbs | grep key
+docker logs hbbs | grep key \
+cat ~/rustdesk/hbbs/id_ed25519.pub
