@@ -1,7 +1,7 @@
 Halo + Siyuan + Caddy + RustDesk
 
-## update
-cd && sudo apt update && sudo apt upgrade -y
+## update system
+sudo apt update && sudo apt upgrade -y
 
 ## install curl (if not installed)
 sudo apt install -y curl
@@ -9,14 +9,26 @@ sudo apt install -y curl
 ## install docker & docker compose
 curl -fsSL https://get.docker.com | sh
 
-## comfirm the installation of docker & docker compose
+## confirm the installation of docker & docker compose
 docker --version && docker compose version
 
-## dockers down
-docker compose down
+## start containers
+docker compose up -d
 
-## dockers stop
+## stop containers (keep containers)
 docker compose stop
 
-## dockers update
+## stop and remove containers
+docker compose down
+
+## update images and restart
 docker compose pull && docker compose up -d
+
+## clean up unused images
+docker image prune -f
+
+## check container status
+docker compose ps
+
+## check logs
+docker logs <container_name> --tail=30
