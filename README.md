@@ -11,3 +11,12 @@ curl -fsSL https://get.docker.com | sh
 
 ## comfirm the installation of docker & docker compose
 docker --version && docker compose version
+
+## dockers down
+docker compose down
+
+## dockers stop
+docker compose stop
+
+## dockers update
+docker compose pull && docker compose up -d
