@@ -15,14 +15,11 @@ docker --version && docker compose version
 ## go to home directory
 cd ~
 
-## create docker-compose.yml & Caddyfile
-nano docker-compose.yml \
-(paste → Ctrl+O → Enter → Ctrl+X)
+## create docker-compose.yml (paste → Ctrl+O → Enter → Ctrl+X)
+nano docker-compose.yml
 
-## create Caddyfile
-mkdir -p ~/caddy  \
-nano ~/caddy/Caddyfile  \
-(paste → Ctrl+O → Enter → Ctrl+X)
+## create Caddyfile (paste → Ctrl+O → Enter → Ctrl+X)
+mkdir -p ~/caddy && nano ~/caddy/Caddyfile
 
 ## start containers
 docker compose up -d
