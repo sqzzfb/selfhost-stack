@@ -41,3 +41,6 @@ docker compose ps
 
 ## check logs
 docker logs <container_name> --tail=30
+
+## check rustdesk key
+docker logs hbbs | grep key
